@@ -1,0 +1,14 @@
+name: business-greetings-action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: run custom action
+      uses: nikita-chaurasiya/business-greetings-action@main
